@@ -99,6 +99,13 @@ const maxHighScores = 5;
 let mostRecentScore = localStorage.getItem("mostRecentScore")
 // a variable to hold the players initials
 const initialsInput = localStorage.getItem("initialsInput")
+// var for the initials box
+const initialBox = document.getElementById("initials-box")
+const saveBtn = document.getElementById("save-btn")
+let scoreBoard = document.getElementById("scoreboard")
+
+
+
 console.log(highScores)
     
     
@@ -170,8 +177,13 @@ saveHighScore = e => {
     // store the highScores array in localStorage
     localStorage.setItem('highScores', JSON.stringify(highScores));
     console.log(highScores)
+    // if the new score is in the top 5, add initial input text box and save button
+   initialBox.classList.remove('hide')
+   saveBtn.classList.remove('hide')
+   scoreBoard.classList.remove('hide')
+
 }
-saveHighScore()
+
 
 
 // a function to start the timer
