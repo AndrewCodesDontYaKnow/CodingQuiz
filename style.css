@@ -1,0 +1,185 @@
+* *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+
+/* style the background */
+body {
+    background-color:#93E9BE;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vw;
+}
+
+/* style the main container */
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: thistle;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px 5px;
+}
+
+/* Create styles for the text */
+
+
+/* style the button grid */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 13px;
+    margin: 20px 0;
+}
+
+.btn {
+    box-shadow: 5px 6px coral;
+}
+
+
+/* style the start button */
+#start-btn {
+    position: relative;
+    background-color: burlywood;
+    border: 2px solid white;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    top:45px;
+}
+
+#start-btn:hover, #next-btn:hover {
+    border-color: lightpink;
+    font-weight: bold;
+}
+
+
+#next-btn {
+    position: relative;
+    background-color: burlywood;
+    border: 2px solid white;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    top:45px;
+}
+
+.btn:hover {
+    border-color: lightpink;
+    font-weight: bold;
+}
+
+
+
+/* title box styling */
+.container-title {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+
+}
+
+.title-box {
+    text-align: center;
+}
+
+
+/* style the question container */
+#question-container {
+    text-align: center;
+}
+
+#question-text {
+    align-items: center;
+}
+
+
+/* style the buttons */
+#answer-buttons {
+    margin: 20px;
+    /* background-color: burlywood; */
+}
+
+.btn {
+    background-color:burlywood;
+    border: 2px solid white;
+}
+
+/* timer box */
+.timer-box {
+    border: 2px solid black;
+    font-size: 20px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+/* style the control buttons, start and next */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls:#start-btn {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 0px;
+    top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls:#next-btn {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 0px;
+    top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style the class for hidden items */
+.hide {
+    display: none;
+}
+
+
+/* style the answer buttons display */
+
+
+/* .container-answers {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+} */
+
+/* .answer-row-1 {
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    width: 90%;
+}
+
+.answer-row-2 {
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+} */
+
+
+
+
